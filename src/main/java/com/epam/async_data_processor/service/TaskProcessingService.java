@@ -3,7 +3,7 @@ package com.epam.async_data_processor.service;
 import com.epam.async_data_processor.domain.entity.Task;
 
 /**
- * Service interface for processing tasks.
+ * Service for processing tasks.
  */
 public interface TaskProcessingService {
 

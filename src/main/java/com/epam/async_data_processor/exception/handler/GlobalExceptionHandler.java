@@ -49,7 +49,6 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler(TaskProcessingException.class)
     public ResponseEntity<ErrorResponseDto> handleTaskProcessingException(TaskProcessingException ex, WebRequest request) {
-
         ErrorResponseDto errorResponse = new ErrorResponseDto(
                 "Task Processing Error",
                 ex.getMessage(),

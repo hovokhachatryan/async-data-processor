@@ -8,7 +8,7 @@ import java.util.Optional;
 import java.util.UUID;
 
 /**
- * Service interface for managing tasks.
+ * Service for managing tasks.
  */
 public interface TaskCrudService {
 

@@ -4,8 +4,6 @@ import com.epam.async_data_processor.api.dto.CreateTaskRequestDto;
 import com.epam.async_data_processor.api.dto.CreateTaskResponseDto;
 import com.epam.async_data_processor.api.dto.ErrorResponseDto;
 import com.epam.async_data_processor.api.dto.TaskResponseDto;
-import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiOperation;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
@@ -17,7 +15,7 @@ import java.util.List;
 import java.util.UUID;
 
 /**
- * Controller interface for managing tasks.
+ * Controller for managing tasks.
  */
 public interface TaskController {
 
