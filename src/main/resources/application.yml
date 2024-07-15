@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/task_processor
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  liquibase:
+    enabled: true
+    drop-first: false
+    change-log: classpath:db/db.changelog-master.yml
+    default-schema: public
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        formatSql: true
+
+
+
+task:
+  executor:
+    poolSize: 10
+    timeoutMs: 15000
+    fakeExecutionTimeMs: 10000
